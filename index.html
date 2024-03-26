@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TurfTime Pro</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="content flex_space">
+        <div class="logo">
+          <h1>TurfTime Pro</h1>
+        </div>
+        <div class="navlinks">
+          <ul id="menulist">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#locations">locations</a></li>
+            <li><a href="#allTurfs">allTurfs</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#news">News and Events</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><button class="primary-btn">BOOK NOW</button></li>
+          </ul>
+          <span class="fa fa-bars" onclick="menutoggle()"></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="home">
+      <div class="content">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="./assets/Images/img1.webp" alt="" />
+            <div class="text">
+              <h1>Enjoy the Sport</h1>
+              <p>
+                Playing turf cricket brings joy, camaraderie, and thrilling
+                competition on grassy fields.
+              </p>
+              <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                <button class="primary-btn">CONTACT US</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/Images/img2.png" alt="" />
+            <div class="text">
+              <h1>SportJoy Connect</h1>
+              <p>
+                Turf cricket sparks joy through spirited play, laughter, and
+                unforgettable moments of camaraderie.
+              </p>
+              <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                <button class="primary-btn">CONTACT US</button>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/Images/img3.jpg" alt="" />
+            <div class="text">
+              <h1>GrassThrill FunZone</h1>
+              <p>
+                Turf cricket creates lasting memories through exhilarating
+                matches and shared moments of pure enjoyment.
+              </p>
+              <div class="flex">
+                <button class="primary-btn">READ MORE</button>
+                <button class="primary-btn">CONTACT US</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="book">
+      <div class="container flex_space">
+        <div class="text">
+          <h1><span>Book </span> Your Turf</h1>
+        </div>
+        <div class="form">
+          <form class="grid">
+            <input type="date" placeholder="Araival Date" />
+            <input type="time" placeholder="Araival Timme" />
+            <input type="number" placeholder="Total Players" />
+            <input type="number" placeholder="Total hours" />
+            <input type="submit" value="CHECK AVAILABILITY" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        dots: false,
+        navText: [
+          "<i class = 'fa fa-chevron-left'></i>",
+          "<i class = 'fa fa-chevron-right'></i>",
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+
+    <!-- About Section-->
+    <section class="about top" id="about">
+      <div class="container flex">
+        <div class="left">
+          <div class="heading">
+            <h2>About Us</h2>
+            <h2>TurfTime Pro</h2>
+          </div>
+          <p>
+            Turf cricket, played on grass pitches, encapsulates the essence of
+            sporting camaraderie and enjoyment. As players gather, they immerse
+            themselves in thrilling matches, showcasing skill and teamwork.
+            Amidst the green fields, bonds are forged, laughter echoes, and the
+            joy of the game reigns supreme, creating enduring memories. <br />
+            <button class="primary-btn">ABOUT US</button>
+          </p>
+        </div>
+
+        <div class="right">
+          <img src="./assets/Images/about.webp" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="counter top">
+      <div class="container grid">
+        <div class="box">
+          <h1>2500</h1>
+          <hr />
+          <span>Customer</span>
+        </div>
+        <div class="box">
+          <h1>1250</h1>
+          <hr />
+          <span>Happy Customer</span>
+        </div>
+        <div class="box">
+          <h1>150</h1>
+          <hr />
+          <span>Expert Technicians</span>
+        </div>
+        <div class="box">
+          <h1>3550</h1>
+          <hr />
+          <span>Desktop Reaired</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="rooms" id="locations">
+      <div class="container top">
+        <div class="heading">
+          <h2>Our Locations</h2>
+          <p>
+            We offer services in numerous locations, ensuring accessibility and
+            convenience for all.
+          </p>
+        </div>
+
+        <div class="content mtop">
+          <div class="owl-carousel owl-carousel1 owl-theme">
+            <div class="items">
+              <div class="image">
+                <img src="./assets/Images/banglore.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Banglore</h2>
+                <p>
+                  Turf cricket facilities abound in Bangalore, offering
+                  enthusiasts ample opportunities for spirited play.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $10
+                    <span>
+                      <br />
+                      Per Hour
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="./assets/Images/chennai.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Chennai</h2>
+                <p>
+                  Chennai boasts abundant turf cricket facilities, inviting
+                  enthusiasts to enjoy thrilling matches.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $10
+                    <span>
+                      <br />
+                      Per Hour
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="./assets/Images/delhi.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Delhi</h2>
+                <p>
+                  Delhi offers diverse turf cricket facilities, providing ample
+                  opportunities for passionate players.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $15
+                    <span>
+                      <br />
+                      Per Hour
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="./assets/Images/gurgoan.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Gurugram</h2>
+                <p>
+                  Gurugram presents vibrant turf cricket facilities, welcoming
+                  enthusiasts for exhilarating matches and camaraderie.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $20
+                    <span>
+                      <br />
+                      Per Hour
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="./assets/Images/hyderabad.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Hyderabad</h2>
+                <p>
+                  Hyderabad features dynamic turf cricket facilities, catering
+                  to players seeking exhilarating matches.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $20
+                    <span>
+                      <br />
+                      Per Hour
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="./assets/Images/mumbai.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Mumbai</h2>
+                <p>
+                  Mumbai hosts vibrant turf cricket venues, providing a
+                  thrilling experience for passionate players.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $18
+                    <span>
+                      <br />
+                      Per Hour
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="./assets/Images/goa.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Goa</h2>
+                <p>
+                  Goa offers scenic turf cricket grounds, beckoning enthusiasts
+                  to enjoy the sport amidst beauty.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $12
+                    <span>
+                      <br />
+                      Per Hour
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="./assets/Images/kolkata.jpg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Kolkata</h2>
+                <p>
+                  Kolkata showcases lively turf cricket facilities, inviting
+                  players to embrace the sport's fervor.
+                </p>
+                <div class="button flex">
+                  <button class="primary-btn">BOOK NOW</button>
+                  <h3>
+                    $18
+                    <span>
+                      <br />
+                      Per Hour
+                    </span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      $(".owl-carousel1").owlCarousel({
+        loop: true,
+        margin: 40,
+        nav: true,
+        dots: false,
+        navText: [
+          "<i class = 'fa fa-chevron-left'></i>",
+          "<i class = 'fa fa-chevron-right'></i>",
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+            margin: 10,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+
+    <section class="gallery" id="allTurfs">
+      <div class="container top">
+        <div class="heading">
+          <h2>All Turfs</h2>
+          <p>
+            Our turf cricket facilities span various locations, ensuring
+            accessibility and convenience for enthusiasts passionate about the
+            sport nationwide.
+          </p>
+        </div>
+      </div>
+
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div class="items">
+            <div class="img">
+              <img src="./assets/Images/turf-1.webp" alt="" />
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="./assets/Images/turf-2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="./assets/Images/turf-3.jpg" alt="" />
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="./assets/Images/turf-4.jpg" alt="" />
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="./assets/Images/turf-5.jpg" alt="" />
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="./assets/Images/turf-6.JPG" alt="" />
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="./assets/Images/turf7.png" alt="" />
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="./assets/Images/turf8.png" alt="" />
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="./assets/Images/turf9.jpg" alt="" />
+            </div>
+          </div>
+          <div class="items">
+            <div class="img">
+              <img src="./assets/Images/turf10.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $(".owl-carousel1").owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        dots: false,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true,
+        navText: [
+          "<i class = 'fa fa-chevron-left'></i>",
+          "<i class = 'fa fa-chevron-right'></i>",
+        ],
+        responsive: {
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 4,
+          },
+          1000: {
+            items: 6,
+          },
+        },
+      });
+    </script>
+
+    <section class="services top" id="services">
+      <div class="container">
+        <div class="heading">
+          <h2>Our Services</h2>
+          <p>
+            Turf cricket services encompass ground prep, umpiring, facilities,
+            equipment provision, and match organization.
+          </p>
+        </div>
+
+        <div class="content flex_space">
+          <div class="left grid2">
+            <div class="box">
+              <div class="text">
+                <img src="./assets/Images/service1.png" alt="" />
+                <h3>Cricket Kit</h3>
+              </div>
+            </div>
+            <div class="box">
+              <div class="text">
+                <img src="./assets/Images/service2.webp" alt="" />
+                <h3>Organizing Matches</h3>
+              </div>
+            </div>
+            <div class="box">
+              <div class="text">
+                <img src="./assets/Images/service3.webp" alt="" />
+                <h3>Equipment provision</h3>
+              </div>
+            </div>
+            <div class="box">
+              <div class="text">
+                <img src="./assets/Images/service4.webp" alt="" />
+                <h3>Ground maintenance</h3>
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <p>
+              Turf cricket services are integral to the smooth operation of
+              matches. Ground preparation ensures pitches are pristine, while
+              umpires uphold fair play. Facilities management maintains
+              amenities, and equipment provision ensures players have what they
+              need. Medical assistance stands ready for injuries, and catering
+              keeps participants fueled. Promotion spreads awareness, and
+              transport arrangements facilitate logistics. Sponsorship
+              management secures support for cricket development. Scorekeeping
+              tracks progress, and statistics offer insights. Together, these
+              services create an environment where players can focus on their
+              game, spectators can enjoy the action, and cricket can flourish as
+              a vibrant sport.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="news top rooms" id="news">
+      <div class="container">
+        <div class="heading">
+          <h2>Our News and Events</h2>
+          <p>
+            Stay updated on the latest turf cricket news and events, covering
+            thrilling matches, player highlights, and upcoming tournaments
+            nationwide.
+          </p>
+        </div>
+
+        <div class="content flex">
+          <div class="left grid2">
+            <div class="items">
+              <div class="image">
+                <img src="./assets/Images/blog1.webp" alt="" />
+              </div>
+              <div class="text">
+                <h2>Tournament Information</h2>
+                <p>
+                  The Tournament Information section provides schedules, teams,
+                  and results for turf cricket tournaments, keeping fans
+                  informed about upcoming matches and outcomes.
+                </p>
+              </div>
+            </div>
+            <div class="items">
+              <div class="image">
+                <img src="./assets/Images/blog2.jpeg" alt="" />
+              </div>
+              <div class="text">
+                <h2>Latest News Articles</h2>
+                <p>
+                  Explore the latest turf cricket news articles for match
+                  summaries, player interviews, and tournament highlights,
+                  providing comprehensive coverage of the sport's developments.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="box flex">
+              <div class="img">
+                <img src="./assets/Images/blog-l1.webp" alt="" />
+              </div>
+              <div class="stext">
+                <h2>Event Calendar</h2>
+                <p>
+                  Display upcoming turf cricket matches, tournaments, and other
+                  events.
+                </p>
+              </div>
+            </div>
+            <div class="box flex">
+              <div class="img">
+                <img src="./assets/Images/blog-l2.jpeg" alt="" />
+              </div>
+              <div class="stext">
+                <h2>Sponsorship and Partnerships</h2>
+                <p>
+                  Highlight sponsors and partners supporting turf cricket events
+                  and initiatives.
+                </p>
+              </div>
+            </div>
+            <div class="box flex">
+              <div class="img">
+                <img src="./assets/Images/blog-l3.webp" alt="" />
+              </div>
+              <div class="stext">
+                <h2>Community Engagement</h2>
+                <p>
+                  Encourage user interaction through forums, comment sections,
+                  or social media integration for discussing news and events.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter mtop">
+      <div class="container flex_space">
+        <h1>Subscribe to Our Newsletter</h1>
+        <input type="text" placeholder="Your Email" />
+        <button class="primary-btn">Subscribe</button>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="container grid">
+        <div class="box">
+          <h1>TurfTimePro</h1>
+          <p>
+            Turf cricket, a game played on grass pitches, epitomizes the essence
+            of camaraderie and competition. Players converge on the field,
+            showcasing their skills and teamwork amidst the lush greenery.
+            Laughter and cheers echo across the grounds, as friendships are
+            forged and cherished memories created in the heat of each match.
+          </p>
+
+          <div class="icon">
+            <a href=""><i class="fa fa-facebook-f"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+            <a href=""> <i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>Links</h2>
+          <ul>
+            <a href="#home"><li>Home</li></a>
+            <a href="#about"><li>About Us</li></a>
+            <a href="#news"><li>News and Events</li></a>
+            <a href="#locations"><li>Locations</li></a>
+            <a href="#allTurfs"><li>AllTurfs</li></a>
+          </ul>
+        </div>
+
+        <div class="box">
+          <h2>Contact Us</h2>
+          <p>
+            Turf cricket blends competition and camaraderie on vibrant grass
+            pitches, fostering unforgettable moments.
+          </p>
+          <i class="fa fa-location-dot"></i>
+          <label>1201 park street, Avenue, Hyderabad, Telangana. </label> <br />
+          <i class="fa fa-phone"></i>
+          <label>+91 9123456780</label> <br />
+          <i class="fa fa-envelope"></i>
+          <label>TurfTimePro@gmail.com</label> <br />
+        </div>
+      </div>
+    </footer>
+
+    <div class="legal">
+      <p class="container">
+        Copyright (c) 2024 Copyright Holder All Rights Reserved.
+      </p>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/032d11eac3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./assets/JS/script.js"></script>
+  </body>
+</html>
